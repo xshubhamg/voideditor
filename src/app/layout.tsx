@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono, Roboto, Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { Geist, Geist_Mono, Inter, Roboto } from "next/font/google";
 
 import "./globals.css";
 import { cn } from "@/lib/utils";
