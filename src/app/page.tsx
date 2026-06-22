@@ -143,7 +143,7 @@ export default function Home() {
     return (
       <div className="flex min-h-screen flex-col bg-background text-foreground md:flex-row">
         {/* Sidebar */}
-        <aside className="w-full shrink-0 border-b border-border bg-card/40 backdrop-blur-md md:w-64 md:border-r md:border-b-0">
+        <aside className="relative w-full shrink-0 border-b border-border bg-card/40 backdrop-blur-md md:w-64 md:border-r md:border-b-0">
           <div className="flex h-16 items-center px-6 border-b border-border">
             <div className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 border border-primary/20">
@@ -719,6 +719,7 @@ export default function Home() {
                   <input
                     id="signin-email"
                     type="email"
+                    autoComplete="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="name@example.com"
@@ -756,6 +757,7 @@ export default function Home() {
                   <input
                     id="signin-password"
                     type="password"
+                    autoComplete="current-password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="••••••••"
@@ -805,6 +807,7 @@ export default function Home() {
                   <input
                     id="signup-name"
                     type="text"
+                    autoComplete="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Jane Doe"
@@ -840,6 +843,7 @@ export default function Home() {
                   <input
                     id="signup-email"
                     type="email"
+                    autoComplete="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="name@example.com"
@@ -875,6 +879,7 @@ export default function Home() {
                   <input
                     id="signup-password"
                     type="password"
+                    autoComplete="new-password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Minimum 8 characters"
