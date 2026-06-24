@@ -1,5 +1,7 @@
 "use client";
 
+import { ModeToggle } from "@/components/mode-toggle";
+
 interface HeaderProps {
   handleSignOut: () => Promise<void>;
   loading: boolean;
@@ -17,6 +19,7 @@ export default function Header({ handleSignOut, loading }: HeaderProps) {
         </p>
       </div>
       <div className="flex items-center gap-3">
+        <ModeToggle />
         <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-500 border border-emerald-500/20">
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
           Connected

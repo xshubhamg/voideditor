@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Loading from "@/components/loading";
+import { ModeToggle } from "@/components/mode-toggle";
 import { authClient } from "@/lib/auth-client";
 
 export default function LandingPage() {
@@ -52,6 +53,7 @@ export default function LandingPage() {
           </div>
 
           <nav className="flex items-center gap-4">
+            <ModeToggle />
             <Link
               href="/sign-in"
               className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/10 hover:shadow-primary/20 hover:bg-primary/95 transition-all"
